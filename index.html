@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<!--
+	Created by Cathy A. Miller
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>S</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href='assets/fonts/' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/myStyle.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body ng-app='mySite' ng-controller='pageCtrl'>
+         <!-- Add your site or application content here -->   
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<div ng-include='"templates/header.html"'></div>
+                 <div ng-view></div>
+                 <div ng-include='"templates/footer.html"'></div> 
+			</div>
+
+		<!-- Scripts -->
+            <!--Vendor: Angular, followed by our custom js -->
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+             <!--Vendor: Skeleton, jQuery and my stuff -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+            <script src="assets/js/app.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,17 @@
+/* CSS Document */
+
+#mylogo{
+	 height: 150px;
+	 width : 150px;
+	 border 1.5px solid #000;
+	 border-radius: 75px;
+}
+
+@font-face {
+	font-family: bilbo;
+	        src: url('assets/fonts/bilbo/Bilbo-Regular.ttf');
+}
+.classyfont{
+	font-family: bilbo;
+}
+	

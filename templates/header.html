@@ -2,20 +2,26 @@
 <header id="header" class="alt">
   <h1><a href="index.html">Solid State</a></h1>
         <nav>
-            <a href="#menu">Menu</a>
+            <a href="#menu" ng-click='toggleMenu()'>Menu</a>
         </nav>
 </header>
 
+
+<div id="overlay" class='hidden'>
+
+</div>
+
 <!-- Menu -->
-    <nav id="menu">
-        <div class="inner">
-            <h2>Menu</h2>
-            <ul class="links">
-                <li><a href="i#ndex">Home</a></li>
-                <li><a href="generic.html">Generic</a></li>
-                <li><a href="elements.html">Elements</a></li>
-           </ul>
-            <a href="#" class="close">Close</a>
-        </div>
-    </nav>
-	
+<div class="site-menu hidden">
+    <h2>Menu</h2>
+    <ul class="links">
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/contact">Contact</a></li>
+        <li><a href="#/about">About</a></li>
+   </ul>
+    <a href="#" class="close" ng-click="toggleMenu()">Close</a>
+</div>
+
+<div style="height:100px;">
+  
+</div>

@@ -16,28 +16,32 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body ng-app='mySite' ng-controller='pageCtrl'>
-         <!-- Add your site or application content here -->   
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+	<body ng-app='mySite' ng-controller='HomeCtrl'>
+         <!-- Add your site or application content here -->
 
-				<div ng-include='"templates/header.html"'></div>
-                 <div ng-view></div>
-                 <div ng-include='"templates/footer.html"'></div> 
+     </div>
+		<!-- Page Wrapper -->
+      <header-directive menu-items='menu'></header-directive>
+			<div id="page-wrapper">
+        <!-- <div ng-include='"templates/header.html"'></div> -->
+
+        <div ng-view></div>
+        <div ng-include='"templates/footer.html"'></div>
 			</div>
 
 		<!-- Scripts -->
-            <!--Vendor: Angular, followed by our custom js -->
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
-             <!--Vendor: Skeleton, jQuery and my stuff -->
+      <!--Vendor: Angular, followed by our custom js -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+      <!--Vendor: Skeleton, jQuery and my stuff -->
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-            <script src="assets/js/app.js"></script>
+			<!-- <script src="assets/js/main.js"></script> -->
+      <script src="assets/js/app.js"></script>
+      <script src='directives/header.js'></script>
 
 	</body>
 </html>

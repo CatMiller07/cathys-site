@@ -8,30 +8,30 @@ app.config(['$routeProvider',function($routeProvider) {
 	 $routeProvider
 			.when("/",{
 				templateUrl:"partials/home.html",
-				controller:'pageCtrl'
-			})
-			.when("/specials",{
-				templateUrl:"partials/specials.html",
-				controller:'pageCtrl'
+				controller:'HomeCtrl'
 			})
 			.when("/contact",{
 				templateUrl:"partials/contact.html",
-				controller:'pageCtrl'
-			})	
+				controller:'ContactCtrl'
+			})
 			.when("/about",{
 					templateUrl:"partials/about.html",
-					controller:'pageCtrl'
-			});
+					controller:'AboutCtrl'
+			})
+			// .otherwise({
+			// 	redirectTo: '/'
+			// });
 }]);
 
-app.controller('pageCtrl',['$scope', function(scope){
-	console.log("Product Controller reporting for duty.")
-	   //http.get('data/products.json').success(function(data){
-	   //		      scope.products = data;
-	   //			  //default to first product
-	   //			  scope.selectedProduct = scope.products[0].Sku;
-		// });
+app.controller('HomeCtrl',['$scope', function($scope){
+		 $scope.menu = ['Home', 'Contact', 'About'];
+		 console.log($scope.menu);
+}]);
 
-	   
-    
+app.controller('ContactCtrl',['$scope', function(scope){
+	   console.log('contactCtrl');
+}]);
+
+app.controller('AboutCtrl',['$scope', function(scope){
+	   console.log('aboutCtrl');
 }]);

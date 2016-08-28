@@ -14,4 +14,30 @@
 .classyfont{
 	font-family: bilbo;
 }
-	
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
+#overlay{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0, 0.7);
+	z-index:10;
+}
+
+.site-menu{
+	position:absolute;
+	left:50%;
+	top:300px;
+	z-index:20;
+}
+
+.hidden{
+	display:none;
+}
